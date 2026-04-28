@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useScrollReveal } from '@/composables/useScrollReveal'
+import AppImage from '@/components/common/AppImage.vue'
 
 const { vReveal } = useScrollReveal()
 </script>
@@ -16,7 +17,11 @@ const { vReveal } = useScrollReveal()
     <!-- Subject image container -->
     <div class="relative z-10 w-full h-full max-w-5xl mx-auto flex items-end justify-center pb-0" v-reveal>
       <div class="w-2/3 h-3/4 bg-transparent flex items-center justify-center">
-        <!-- TODO: Add artist pic here -->
+        <AppImage 
+          src="/private/artist.png" 
+          fallback="/placeholders/artist.png" 
+          class="max-h-full w-auto object-contain select-none"
+        />
       </div>
     </div>
 
