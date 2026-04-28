@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "name": "Artist Name"
+  },
+  "about": {
+    "heading": "Art in motion, expression without boundaries.",
+    "description": "This is your artistic biography. Describe your style, your inspiration, and your creative journey here. Make it personal and engaging for your audience."
+  },
+  "works": {
+    "title": "Selected Works",
+    "status": "(Coming Soon)"
+  }
+}

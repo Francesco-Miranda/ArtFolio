@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "name": "Nome Artista"
+  },
+  "about": {
+    "heading": "Arte in movimento, espressione senza confini.",
+    "description": "Questa è la tua biografia artistica. Descrivi qui il tuo stile, la tua ispirazione e il tuo percorso creativo. Rendilo personale e coinvolgente per il tuo pubblico."
+  },
+  "works": {
+    "title": "Opere Selezionate",
+    "status": "(In arrivo)"
+  }
+}

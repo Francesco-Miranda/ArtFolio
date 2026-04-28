@@ -7,9 +7,9 @@ const { vReveal } = useScrollReveal()
 <template>
   <section class="relative w-full h-screen overflow-hidden bg-[#0a0a0a] flex items-center justify-center">
 
-    <!-- Artist name behind the image -->
     <div class="absolute inset-0 flex items-center justify-center z-0 select-none overflow-hidden" v-reveal>
       <h1 class="text-[15vw] font-black tracking-tighter text-zinc-800/80 whitespace-nowrap uppercase">
+        {{ $t('hero.name') }}
       </h1>
     </div>
 
