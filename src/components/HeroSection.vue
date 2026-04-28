@@ -21,24 +21,27 @@ const dynamicFontSize = computed(() => {
 </script>
 
 <template>
-  <section class="relative w-full h-screen overflow-hidden bg-brand-bg flex items-center justify-center">
+  <section class="relative w-full h-dvh overflow-hidden bg-brand-bg flex items-center justify-center">
 
     <div class="absolute inset-0 flex items-center justify-center z-0 select-none overflow-hidden" v-reveal>
-      <h1 class="font-black tracking-wide text-brand-text/5 text-center uppercase leading-[0.8] px-2"
+      <h1 class="font-black tracking-wide text-brand-text/15 text-center uppercase leading-[0.8] px-2"
         :style="{ fontSize: dynamicFontSize }">
         {{ name }}
       </h1>
     </div>
 
     <!-- Subject image container -->
-    <div class="relative z-10 w-full h-full max-w-5xl mx-auto flex items-end justify-center pb-0" v-reveal>
-      <div class="w-2/3 h-3/4 bg-transparent flex items-center justify-center">
+    <div
+      class="absolute bottom-0 z-10 w-full h-full max-w-5xl mx-auto flex items-end justify-center pointer-events-none"
+      v-reveal>
+      <div class="w-full md:w-2/3 h-4/5 md:h-3/4 flex items-end justify-center">
         <AppImage src="/private/artist.png" fallback="/placeholders/artist.png"
-          class="max-h-full w-auto object-contain select-none" />
+          class="max-h-full w-auto object-contain object-bottom select-none" />
       </div>
     </div>
 
     <!-- Bottom gradient to blend with the next section -->
-    <div class="absolute bottom-0 w-full h-32 bg-linear-to-t from-brand-bg to-transparent z-20"></div>
+    <div class="absolute bottom-0 w-full h-48 bg-linear-to-t from-brand-bg to-transparent z-20 pointer-events-none">
+    </div>
   </section>
 </template>
