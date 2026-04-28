@@ -16,7 +16,7 @@ const { vReveal } = useScrollReveal()
       </p>
 
       <!-- Separator -->
-      <div class="w-12 h-[1px] bg-zinc-600 mx-auto" v-reveal></div>
+      <div class="w-12 h-px bg-zinc-600 mx-auto" v-reveal></div>
     </div>
   </section>
 </template>
