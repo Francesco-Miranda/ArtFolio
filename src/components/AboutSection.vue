@@ -6,7 +6,7 @@ const { vReveal } = useScrollReveal()
 
 <template>
   <section
-    class="w-full min-h-screen bg-brand-bg text-brand-text py-32 px-6 flex flex-col items-center justify-center relative z-20">
+    class="w-full bg-brand-bg text-brand-text pt-32 pb-16 px-6 flex flex-col items-center justify-center relative z-20">
     <div class="max-w-3xl mx-auto text-center">
       <h2 class="text-3xl md:text-5xl font-light mb-8 tracking-tight" v-reveal v-html="$t('about.heading')">
       </h2>
